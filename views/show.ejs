@@ -14,5 +14,13 @@
     <% } else { %>
         <p>A festmény nincs kiállítva sehol</p>
     <% } %>
+    <br>
+    <br>
+    <form action="/paintings/<%= painting.id %>/delete" method="post">
+        <input type="submit" value="Festmény törlése">
+    </form>
+    <form action="/paintings/<%= painting.id %>/update" method="post">
+        <input type="submit" value="Festmény frissítése">
+    </form>
 </body>
 </html>
